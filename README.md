@@ -46,6 +46,6 @@ TASKCREATOR é um site para criar um registro de atividades por data.
 
 Este é um projeto desenvolvido para um teste de uma empresa.
 
-Também é possível acessar o projeto hospedado no Firebase clicando aqui: [TASKCREATOR](https://letmeask-3346e.web.app/).
+Também é possível acessar o projeto hospedado no Firebase clicando aqui: [TASKCREATOR](https://611293af21764b39b84fccf1--frosty-dubinsky-0695b2.netlify.app/).
 
 Feito com 💜 by Cesar Emmanuel 👋🏻
