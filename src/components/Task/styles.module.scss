@@ -1,0 +1,373 @@
+.taskContainerPending {
+    width: 300px;
+    height: 380px;
+    padding: 1.5rem;
+
+    border-radius: 10px;
+    border: 1px solid var(--task-pending);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgba(var(--task-pending-decimal), 0.3);
+
+    @media (max-width: 1242px) {
+        width: 260px;
+        height: 300px;
+    }
+
+   .taskContent {
+        header {
+            margin-bottom: 0.6rem;
+        }
+
+        span {
+            font-style: italic;
+        }
+
+        p {
+            margin-top: 1rem;
+            overflow: auto;
+            height: 160px;
+
+            @media (max-width: 1240px) {
+                height: 100px;
+            }
+        }
+   }
+
+   footer {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+       .dropdownStatusContainer {
+        position: relative;
+    
+        .buttonDropdownStatus {
+            width: 120px;
+            height: 30px;
+            padding: 0.4rem;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            border-radius: 7px;
+            border: 1px solid var(--task-pending);
+    
+            background: #fff;
+    
+            font-family: 'Roboto';
+            font-size: 1rem;
+            
+
+            &:hover {
+                background: rgba(var(--task-pending-decimal), 0.3);
+            }
+        }
+    
+        .dropdownStatusContent {
+            position: absolute;
+            width: 120px;
+            top: 110%;
+            right: 50%;
+            transform: translateX(50%);
+
+            border-radius: 7px;
+            border: 1px solid var(--task-pending);
+    
+            background: #fff;
+    
+            overflow: hidden;
+    
+            li {
+                padding: 0.3rem;
+                
+
+                &:hover {
+                    
+                    background: rgba(var(--task-pending-decimal), 0.3);
+                }
+                
+                button {
+                    width: 100%;
+                    padding: 0.3rem;
+                    display: flex;
+        
+                    border: none;
+                    background: transparent;
+
+                    font-size: 0.8rem;   
+                    
+                    &:hover {
+                        color: var(--task-pending);
+                    }
+                }
+            }
+        }
+    }
+
+       button:nth-child(2) {
+           background: transparent;
+           border: none;
+
+           svg {
+                &:hover{
+                    color: var(--task-canceled);
+                }
+           }
+       }
+   }
+}
+
+.taskContainerCompleted {
+    width: 300px;
+    height: 380px;
+    padding: 1.5rem;
+
+    border-radius: 10px;
+    border: 1px solid var(--task-completed);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgba(var(--task-completed-decimal), 0.3);
+
+    @media (max-width: 1242px) {
+        width: 260px;
+        height: 300px;
+    }
+
+   .taskContent {
+        header {
+            margin-bottom: 0.6rem;
+        }
+
+        span {
+            font-style: italic;
+        }
+
+        p {
+            margin-top: 1rem;
+            overflow: auto;
+            height: 160px;
+
+            @media (max-width: 1240px) {
+                height: 130px;
+            }
+        }
+   }
+
+   footer {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+       .dropdownStatusContainer {
+        position: relative;
+    
+        .buttonDropdownStatus {
+            width: 120px;
+            height: 30px;
+            padding: 0.4rem;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            border-radius: 5px;
+            border: 1px solid var(--task-completed);
+    
+            background: #fff;
+    
+            font-family: 'Roboto';
+            font-size: 1rem;
+
+            &:hover {
+                background-color: rgba(var(--task-completed-decimal), 0.3);
+            }
+        }
+    
+        .dropdownStatusContent {
+            position: absolute;
+            width: 120px;
+    
+            top: 110%;
+            right: 50%;
+            transform: translateX(50%);
+    
+            border: 1px solid var(--task-completed);
+            border-radius: 5px;
+    
+            background: #fff;
+    
+            overflow: hidden;
+    
+            li {
+                padding: 0.3rem;
+
+                &:hover {
+                    background-color: rgba(var(--task-completed-decimal), 0.3);
+                }
+
+                button {
+                    width: 100%;
+                    padding: 0.3rem;
+                    display: flex;
+        
+                    border: none;
+                    background: transparent;
+
+                    font-size: 0.8rem; 
+
+                    &:hover {
+                        color: var(--task-completed);
+                    }
+                }
+            }
+        }
+    }
+
+       button:nth-child(2) {
+           background: transparent;
+           border: none;
+
+           svg {
+                &:hover{
+                    color: var(--task-canceled);
+                }
+            }
+       }
+   }
+}
+
+.taskContainerCanceled {
+    width: 300px;
+    height: 380px;
+    padding: 1.5rem;
+
+    border-radius: 10px;
+    border: 1px solid var(--task-canceled);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgba(var(--task-canceled-decimal), 0.3);
+
+    @media (max-width: 1242px) {
+        width: 260px;
+        height: 300px;
+    }
+
+   .taskContent {
+        header {
+            margin-bottom: 0.6rem;
+        }
+
+        span {
+            font-style: italic;
+        }
+
+        p {
+            margin-top: 1rem;
+            overflow: auto;
+            height: 160px;
+
+            @media (max-width: 1240px) {
+                height: 130px;
+            }
+        }
+   }
+
+   footer {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+       .dropdownStatusContainer {
+        position: relative;
+    
+        .buttonDropdownStatus {
+            width: 120px;
+            height: 30px;
+            padding: 0.4rem;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            border-radius: 5px;
+            border: 1px solid var(--task-canceled);
+    
+            background: #fff;
+    
+            font-family: 'Roboto';
+            font-size: 1rem;
+
+            &:hover {
+                background-color: rgba(var(--task-canceled-decimal), 0.3);
+            }
+        }
+    
+        .dropdownStatusContent {
+            position: absolute;
+            width: 120px;
+    
+            top: 110%;
+            right: 50%;
+            transform: translateX(50%);
+    
+            border: 1px solid var(--task-canceled);
+            border-radius: 5px;
+    
+            background: #fff;
+    
+            overflow: hidden;
+    
+            li {
+                padding: 0.3rem;
+
+                &:hover {
+                    background-color: rgba(var(--task-canceled-decimal), 0.3);
+                }
+                
+                button {
+                    width: 100%;
+                    padding: 0.3rem;
+                    display: flex;
+
+                    border: none;
+                    background: transparent;
+
+                    font-size: 0.8rem;   
+
+                    &:hover {
+                        color: var(--task-canceled);
+                    }
+                }
+            }
+        }
+    }
+
+       button:nth-child(2) {
+           background: transparent;
+           border: none;
+
+           svg {
+                &:hover{
+                    color: var(--task-canceled);
+                }
+            }
+       }
+   }
+}
+
+.tasksEmptyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

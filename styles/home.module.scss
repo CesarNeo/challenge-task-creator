@@ -1,0 +1,222 @@
+.homeContainer {
+    display: flex;
+
+    .homeContent {
+        display: flex;
+        flex-direction: column;
+        max-width: 1050px;
+        padding: 0.6rem;
+        margin: 6rem auto 0;
+
+        @media (max-width: 1242px) {
+            max-width: 983px;
+        }
+
+        @media (max-width: 1132px) {
+            max-width: 863px;
+        }
+        
+        .tasksContent {   
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+    
+            form {
+                max-width: 700px;
+                width: 100%;
+    
+                margin: 0 auto 7rem;
+                padding: 0.9rem;
+    
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+                @media (max-width: 1040px) {
+                    margin-top: 50px;
+                }
+    
+                 .taksCreateInput {
+                    width: 100%;
+                    margin-bottom: 1.25rem;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+    
+    
+                    &::placeholder {
+                        color: var(--text-gray);
+                    }
+                }
+    
+                textarea {
+                    width: 100%;
+                    height: 110px;
+    
+                    resize: none;
+    
+                    &::placeholder {
+                        color: var(--text-gray);
+                    }
+                }
+    
+    
+                footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    input {
+                        font-family: 'Roboto';
+                        width: 110px;
+                        font-size: 1.3rem;
+                    }
+    
+                    @media (max-width: 372px) {
+                        flex-direction: column;
+    
+                        input {
+                            margin-bottom: 1rem;
+                            text-align: center;
+                        }
+    
+                        .footerButtons {
+                            button {
+                                width: 100%;
+                            }
+                        }
+                    }
+    
+                    .footerButtons {
+                        display: flex;
+    
+                         .buttonFooterCreateTask {
+                            width: 100px;
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 0.6rem;
+                            padding: 0.4rem;
+    
+                            border: none;
+                            border-radius: 5px;
+                            
+                            background: var(--blue);
+                            
+                            font-weight: bold;
+                            font-family: 'Roboto';
+                            font-weight: 500;
+                            font-size: 1.25rem;
+                            color: #fff;
+    
+                            &:hover {
+                                filter: brightness(0.8);
+                            }
+                        }
+                    }
+                }
+            } 
+    }
+    
+}
+
+
+
+
+.homeContentDark {
+    display: flex;
+    flex-direction: column;
+    max-width: 1176px;
+    padding: 0.6rem;
+    margin: 0 auto;
+
+    body {
+        background: var(--background-dark);
+    }
+
+    .tasksContent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+        form {
+            max-width: 800px;
+            width: 100%;
+
+            margin: 0 auto 7rem;
+            padding: 0.9rem;
+
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+             .taksCreateInput {
+                width: 100%;
+                margin-bottom: 1.25rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+
+
+                &::placeholder {
+                    color: var(--text-gray);
+                }
+            }
+
+            textarea {
+                width: 100%;
+                height: 110px;
+
+                resize: none;
+
+                &::placeholder {
+                    color: var(--text-gray);
+                }
+            }
+
+
+            footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                input {
+                    font-family: 'Roboto';
+                    max-width: 100px;
+    
+                }
+
+                .footerButtons {
+                    display: flex;
+
+                     .buttonFooterCreateTask {
+                        width: 100px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        font-weight: bold;
+                        
+                        margin-left: 0.6rem;
+                        padding: 0.4rem;
+    
+                        border: none;
+                        border-radius: 5px;
+    
+                        background: var(--blue);
+                        
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        font-size: 1.13rem;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+}

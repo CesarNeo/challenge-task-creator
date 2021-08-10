@@ -1,0 +1,62 @@
+.dropdownStatusContainer {
+    position: relative;
+
+    .buttonDropdownStatus {
+        width: 120px;
+        height: 30px;
+        padding: 0.4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-radius: 5px;
+        border: 1px solid var(--blue);
+
+        background: #fff;
+
+        font-family: 'Roboto';
+        font-size: 1rem;
+
+        &:hover {
+            background: rgb(var(--blue-decimal), 0.3);
+        }
+    }
+
+    .dropdownStatusContent {
+        position: absolute;
+        width: 120px;
+
+        top: 110%;
+        right: 50%;
+        transform: translateX(50%);
+
+        border: 1px solid;
+        border-radius: 5px;
+
+        background: #fff;
+
+        overflow: hidden;
+
+        li {
+            padding: 0.3rem;
+
+            &:hover {
+                background: rgb(var(--blue-decimal), 0.3);
+            }
+            
+            button {
+                width: 100%;
+                padding: 0.3rem;
+                display: flex;
+    
+                border: none;
+                background: transparent;
+    
+                &:hover {
+                    color: var(--blue);
+                }
+            }
+        }
+    }
+}
